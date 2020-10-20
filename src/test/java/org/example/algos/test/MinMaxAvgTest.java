@@ -2,6 +2,7 @@ package org.example.algos.test;
 
 import org.example.algos.dtos.MinMaxAvgDto;
 import org.example.algos.services.MinMaxAvg;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,7 @@ public class MinMaxAvgTest {
     private MinMaxAvg minMaxAvg;
 
     @Test
+    @DisplayName("Получение минимального, максимального и среднего значения из массива")
     public void testMinMaxAvg() {
 
         double[] array = { 2.5, 1.5, 2.0 };
