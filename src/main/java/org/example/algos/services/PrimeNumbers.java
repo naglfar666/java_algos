@@ -23,9 +23,7 @@ public class PrimeNumbers {
 
                 if (newArray.length > 0) {
                     int[] tempArray = new int[length];
-                    for (int x = 0; x < newArray.length; x++) {
-                        tempArray[x] = newArray[x];
-                    }
+                    System.arraycopy(newArray, 0, tempArray, 0, newArray.length);
                     tempArray[length - 1] = array[i];
                     newArray = tempArray;
                 } else {
